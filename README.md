@@ -1,5 +1,5 @@
 # Internet speed test plot - with speedtest-cli and matplotlib
-Example of plot https://github.com/brentoncollins/ninternet-speed-plot/example-plot.png
+Example of plot https://github.com/brentoncollins/internet-speed-plot/blob/master/example-plot.png
 
 There has been alot of talk around the NBN speeds in Australia lately, so I thought that I would put my two cents
 in for anyone who wants some data to complain with. 
