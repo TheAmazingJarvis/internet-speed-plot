@@ -24,7 +24,8 @@ matplotlib
 numpy
 
 
-sudo apt-get install python-setuptools python-dev build-essential 
+sudo apt-get install python3-setuptools python3-dev build-essential 
+
 git clone https://github.com/brentoncollins/internet-speed-plot
 
 python3 setup.py install
