@@ -37,5 +37,4 @@ python3 speed.py
 ## Feedback
 
 If you have anyfeedback, or it doesnt work, please message me as this is the first commit and I most probably have forgotten something.
-I have tested it on Python 2.x and 3.x on windows and linux.
 brenton.collins@outlook.com
