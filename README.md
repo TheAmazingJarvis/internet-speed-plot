@@ -25,7 +25,9 @@ numpy
 
 ## Install
 
-sudo apt-get install python3-setuptools python3-dev build-essential 
+Best to run everything as super-user so that you have permissions to create new files.
+
+apt-get install python3-setuptools python3-dev build-essential 
 
 git clone https://github.com/brentoncollins/internet-speed-plot
 
