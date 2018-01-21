@@ -195,17 +195,17 @@ def main():
 	speed_plot()
 	now = datetime.now()
 	seconds_since_midnight = (now - now.replace(hour=0, minute=0, second=0, microsecond=0)).total_seconds()
-	#if seconds_since_midnight > 1 and seconds_since_midnight < 100:
-	try:
-		timestr = str(time.strftime('%d-%m-%Y'))
-		shutil.copy(speed_img, '{}/speed_logs/{}.png'.format(data_path,timestr))
-	except FileNotFoundError:
-		if not os.path.exists('{}/speed_logs'.format(data_path)):
-			try:
-				os.mkdir('{}/speed_logs'.format(data_path))
-				shutil.copy(speed_img, '{}/speed_logs/{}.png'.format(data_path,timestr))
-			except PermissionError:
-				print('\033[1;31m\nERROR: No permission to create a new directory for the speed-plot image logs.\nPlease run as user with permissions\n\033[1;m')
+	if seconds_since_midnight > 1 and seconds_since_midnight < 100:
+		try:
+			timestr = str(time.strftime('%d-%m-%Y'))
+			shutil.copy(speed_img, '{}/speed_logs/{}.png'.format(data_path,timestr))
+		except FileNotFoundError:
+			if not os.path.exists('{}/speed_logs'.format(data_path)):
+				try:
+					os.mkdir('{}/speed_logs'.format(data_path))
+					shutil.copy(speed_img, '{}/speed_logs/{}.png'.format(data_path,timestr))
+				except PermissionError:
+					print('\033[1;31m\nERROR: No permission to create a new directory for the speed-plot image logs.\nPlease run as user with permissions\n\033[1;m')
 
 hours_of_day = [3600,7200,10800,14400,18000,21600,25200,28800,32400,36000,39600,43200,46800,50400,54000,57600,61200,64800,68400,72000,75600,79200,82800,1]		
 
