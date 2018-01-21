@@ -4,7 +4,7 @@ Example of plot https://github.com/brentoncollins/ninternet-speed-plot/example-p
 There has been alot of talk around the NBN speeds in Australia lately, so I thought that I would put my two cents
 in for anyone who wants some data to complain with. 
 
-Every hour it will use matplotlib to create a plot of your current connection speeds and save them to a image file, every 24 hours from when you run the file it will make a copy of your daily plot and save it in the same directory for you to check or send off to complain.
+Every hour it will use matplotlib to create a plot of your current connection speeds and save them to a image file, every 24 at midnight it will make a copy of your daily plot and save it in a logs directory for you to check or send off to complain.
 
 This was created in python 3.x
 
@@ -23,6 +23,7 @@ matplotlib
 
 numpy
 
+## Install
 
 sudo apt-get install python3-setuptools python3-dev build-essential 
 
