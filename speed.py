@@ -215,7 +215,7 @@ if __name__ == '__main__':
 		sys.stdout.write('\033[1;31m\nSorry, requires Python 3.x, not Python 2.x\n\033[1;m')
 		sys.exit(1)
 	
-	print ('Waiting to run the speed plot on every hour.')
+	print ('\033[1;32m\nWaiting to run the speed plot on every hour.\033[1;m')
 	while True:
 		time.sleep(1)
 		now = datetime.now()
